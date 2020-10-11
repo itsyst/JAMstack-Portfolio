@@ -1,0 +1,4 @@
+{
+  "myCustomConfiguration": "This configuration is accessible through strapi.config.environments.production.myCustomConfiguration",
+  "staticWebsiteBuildUrl":"https://api.netlify.com/build_hooks/5f7fab77765382008fa0d139"
+}
