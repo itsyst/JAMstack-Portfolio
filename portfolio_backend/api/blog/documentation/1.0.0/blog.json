@@ -521,7 +521,8 @@
           "content",
           "image",
           "slug",
-          "category"
+          "category",
+          "desc"
         ],
         "properties": {
           "id": {
@@ -622,6 +623,9 @@
           "date": {
             "type": "string"
           },
+          "desc": {
+            "type": "string"
+          },
           "published_at": {
             "type": "datetime"
           }
@@ -632,7 +636,8 @@
           "title",
           "content",
           "slug",
-          "category"
+          "category",
+          "desc"
         ],
         "properties": {
           "title": {
@@ -661,6 +666,9 @@
             ]
           },
           "date": {
+            "type": "string"
+          },
+          "desc": {
             "type": "string"
           },
           "published_at": {

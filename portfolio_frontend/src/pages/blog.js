@@ -27,18 +27,12 @@ export const query = graphql`
 `
 
 const Blog = ({
-  data: {
-    allStrapiBlogs: { nodes: blogs },
-  },
-}) => {
+  data: { allStrapiBlogs: { nodes: blogs }, }, }) => {
   return (
     <Layout>
       <SEO title="Bloggen" description="Bloggsidan" />
-      <section className="blog-page">
-        <Blogs blogs={blogs} title="Alla artiklar" />
-      </section>
+      <Blogs blogs={blogs} title="Alla artiklar" />
     </Layout>
   )
 }
-
 export default Blog

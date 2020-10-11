@@ -54,6 +54,10 @@
     },
     "date": {
       "type": "date"
+    },
+    "desc": {
+      "type": "string",
+      "required": true
     }
   }
 }
