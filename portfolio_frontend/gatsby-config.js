@@ -35,21 +35,21 @@ module.exports = {
                 queryLimit: 1000,
             },
         },
-        {
-            resolve: `gatsby-plugin-prefetch-google-fonts`,
-            options: {
-                fonts: [
-                    {
-                        family: `PT Serif`,
-                        variants: [`200`, `400`, `700`],
-                    },
-                    {
-                        family: `Mulish`,
-                        variants: [`400`, `700`],
-                    },
-                ],
-            },
-        },
+        // {
+        //     resolve: `gatsby-plugin-prefetch-google-fonts`,
+        //     options: {
+        //         fonts: [
+        //             {
+        //                 family: `PT Serif`,
+        //                 variants: [`200`, `400`, `700`],
+        //             },
+        //             {
+        //                 family: `Mulish`,
+        //                 variants: [`400`, `700`],
+        //             },
+        //         ],
+        //     },
+        // },
         {
             resolve: `gatsby-plugin-offline`,
             options: {
