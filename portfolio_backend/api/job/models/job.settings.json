@@ -6,7 +6,8 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "company": {
@@ -25,7 +26,7 @@
       "type": "component",
       "repeatable": true,
       "component": "description.job-description",
-      "required": false
+      "required": true
     }
   }
 }

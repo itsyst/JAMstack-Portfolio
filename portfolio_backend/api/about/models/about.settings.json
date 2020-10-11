@@ -2,11 +2,13 @@
   "kind": "singleType",
   "collectionName": "abouts",
   "info": {
-    "name": "About"
+    "name": "about",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "title": {
@@ -22,12 +24,12 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "stack": {
       "type": "component",
       "repeatable": true,
-      "component": "description.stack",
+      "component": "stack-item.stack-item",
       "required": true
     },
     "info": {

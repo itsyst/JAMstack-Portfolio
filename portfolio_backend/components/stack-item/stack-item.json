@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_description_stacks",
+  "collectionName": "components_stack_item_stack_items",
   "info": {
-    "name": "stack_item",
-    "icon": "archive"
+    "name": "Stack_item",
+    "icon": "wallet"
   },
   "options": {},
   "attributes": {

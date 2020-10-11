@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "blogs",
   "info": {
-    "name": "blog"
+    "name": "blog",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "title": {
@@ -26,28 +28,28 @@
         "videos"
       ],
       "plugin": "upload",
-      "required":  false
+      "required": true
     },
     "slug": {
       "type": "uid",
-      "targetField": "title",
-      "required": true
+      "required": true,
+      "targetField": "title"
     },
     "category": {
       "type": "enumeration",
       "enum": [
-        "Html",
-        "saas",
-        "pug",
-        "gatsby",
-        "react",
-        "styledComponent",
-        "strapi"
+        "MongoDB",
+        "StyledComponents",
+        "Angular",
+        "HTML",
+        "CSS",
+        "Pug",
+        "Strapi",
+        "VueJs",
+        "React",
+        "Gatsby",
+        "webbdesigner"
       ],
-      "required": true
-    },
-    "desc": {
-      "type": "text",
       "required": true
     },
     "date": {

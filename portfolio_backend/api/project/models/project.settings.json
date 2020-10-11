@@ -2,16 +2,17 @@
   "kind": "collectionType",
   "collectionName": "projects",
   "info": {
-    "name": "project"
+    "name": "project",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "description": {
       "type": "string",
@@ -26,11 +27,11 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "github": {
       "type": "string",
-      "required": false
+      "required": true
     },
     "url": {
       "type": "string",
@@ -38,13 +39,12 @@
     },
     "featured": {
       "type": "boolean",
-      "default": false,
-      "required": true
+      "default": false
     },
     "stack": {
       "type": "component",
       "repeatable": true,
-      "component": "description.stack",
+      "component": "stack-item.stack-item",
       "required": true
     }
   }

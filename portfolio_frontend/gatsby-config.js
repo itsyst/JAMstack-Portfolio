@@ -29,12 +29,13 @@ module.exports = {
         {
             resolve: `gatsby-source-strapi`,
             options: {
-                apiURL: process.env.API_URL || "http://localhost:1337",
+                apiURL: process.env.DEPLOY_URL
+                    ? "https://YOUR-APP-URL.herokuapp.com"
+                    : "http://localhost:1337",
                 contentTypes: [`jobs`, `projects`, `blogs`],
                 singleTypes: [`about`],
-                queryLimit: 5000,
+                queryLimit: 1000,
             },
-
         },
         {
             resolve: `gatsby-plugin-prefetch-google-fonts`,

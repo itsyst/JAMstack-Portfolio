@@ -2,8 +2,6 @@
 # Strapi & Gatsby
 ############################
 .env
-license.txt
-exports
 .cache
 build
 .vscode
