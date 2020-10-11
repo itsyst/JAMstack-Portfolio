@@ -6,4 +6,5 @@ license.txt
 exports
 .cache
 build
+.vscode
 package-lock.json
