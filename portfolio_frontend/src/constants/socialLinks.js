@@ -6,7 +6,7 @@ import {
   FaGithubSquare,
   FaTwitterSquare,
 } from "react-icons/fa"
-
+import styled from "styled-components"
 
 const data = [
   {
@@ -41,7 +41,7 @@ export default ({ styleClass }) => {
     <ul className={`social-links ${styleClass ? styleClass : ""}`}>
       {data.map(link => (
         <li key={link.id}>
-          <a href={link.url} className="social-link" target="_blank" rel="noopener noreferrer">{link.icon}</a>
+          <StyledSocialLink href={link.url} target="_blank" rel="noopener noreferrer">{link.icon}</StyledSocialLink>
         </li>
 
       ))}
@@ -49,3 +49,11 @@ export default ({ styleClass }) => {
   )
 }
 
+const StyledSocialLink = styled.a`
+  font-size: 1.75rem;
+  transition: ${props => props.theme.colors.primary5};
+
+  :hover {
+  color: ${props => props.theme.animations.transition};
+  }
+`
