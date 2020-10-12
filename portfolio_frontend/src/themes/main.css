@@ -862,15 +862,26 @@ Pages
 .blog-page,
 .error-page,
 .about-page,
-.contact-page {
+.contact-page,
+.thanks-page {
   background: var(--clr-grey-10);
   min-height: calc(100vh - 5rem - 9rem);
 }
-.error-page {
+.error-page,
+.thanks-page {
   display: grid;
   place-items: center;
   background: var(--clr-primary-10);
   text-align: center;
+}
+.thanks-container h2{
+  display: grid;
+  margin:5rem;
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius:var(--radius);
+  box-shadow:var(--dark-shadow);
 }
 .error-page h1 {
   text-transform: uppercase;
