@@ -1009,6 +1009,10 @@ Contact Page
   text-transform: uppercase;
   letter-spacing: var(--spacing);
 }
+.form-recapcha {
+  padding: 0 1.5rem;
+  text-align: center;
+}
 .submit-btn {
   display: block;
   width: 100%;
