@@ -9,11 +9,7 @@ const contact = () => {
             <section className="contact-page">
                 <article className="contact-form">
                     <h3>kontakta mig</h3>
-                    <form
-                        name="contact"
-                        method="POST"
-                        data-netlify="true"
-                        data-netlify-honeypot="bot-field">
+                    <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
                         <div className="form-group">
                             <input
                                 type="text"
@@ -36,7 +32,7 @@ const contact = () => {
                         </div>
                         <button type="submit" className="submit-btn btn">
                             Kontakta mig
-                        </button>
+                      </button>
                     </form>
                 </article>
             </section>
