@@ -58,8 +58,6 @@ export default function Contact() {
                         <noscript>
                             <p>This form won’t work with Javascript disabled</p>
                         </noscript>
-
-                        <input type="hidden" name="form-name" value="contact" />
                         <div className="form-group">
                             <input
                                 type="text"
