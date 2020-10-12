@@ -14,7 +14,7 @@ const contact = () => {
                         method="post"
                         data-netlify="true"
                         data-netlify-honeypot="bot-field"
-                        action="/thanks" netlify>
+                        netlify>
                         <div className="form-group">
                             <input
                                 type="text"
