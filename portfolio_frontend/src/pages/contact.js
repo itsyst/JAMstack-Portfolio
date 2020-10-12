@@ -6,10 +6,10 @@ const contact = () => {
     return (
         <Layout>
             <SEO title="Kontakt" description="Kontaktsidan" />
-            <section action="/thanks" className="contact-page">
+            <section className="contact-page">
                 <article className="contact-form">
                     <h3>kontakta mig</h3>
-                    <form name="contact" netlify>
+                    <form action="/thanks" name="contact" method="POST" netlify>
                         <div className="form-group">
                             <input
                                 type="text"
@@ -20,7 +20,7 @@ const contact = () => {
                             />
                             <input
                                 type="email"
-                                placeholder="epost"
+                                placeholder="e-post"
                                 name="email"
                                 className="form-control"
                                 required
