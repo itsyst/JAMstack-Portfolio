@@ -7,9 +7,7 @@ import Recaptcha from 'react-google-recaptcha'
 
 const RECAPTCHA_KEY = process.env.GATSBY_APP_SITE_RECAPTCHA_KEY
 if (typeof RECAPTCHA_KEY === 'undefined') {
-    throw new Error(`
-  You probably forget to set it in your variables. 
-  `)
+    throw new Error("You probably forget to set it in your variables.")
 }
 
 function encode(data) {
