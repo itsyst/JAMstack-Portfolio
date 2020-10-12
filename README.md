@@ -54,7 +54,7 @@ module.exports = ({ env }) => (
 ```
 
 12. In the frontend run `gatsby develop` and keep running the backend_portfolio in the background to fetch data from strapi.
-13. To deploy you site to netlify you have to set the API_URL in gatsby-config file to your heroku url 
+13. To deploy you site to netlify you have to set the API_URL in gatsby-config file to your heroku url "https://YOUR-APP-URL.herokuapp.com"
 ```
         {
             resolve: `gatsby-source-strapi`,
@@ -65,4 +65,10 @@ module.exports = ({ env }) => (
                 queryLimit: 1000,
             },
         },
+```
+14. For your project environment variables that you want to access in client-side browser, you can define an environment config file, .env.development and/or .env.production, in your root folder, and do not forget to add the folowing code to gatsby-config.js file.
+```
+require('dotenv').config({
+    path: `.env.${process.env.NODE_ENV}`,
+})
 ```
