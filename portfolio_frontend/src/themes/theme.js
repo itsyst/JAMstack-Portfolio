@@ -32,14 +32,7 @@ export default {
         mobile: "only screen and (min-width: 37rem)",
     },
     spacings: {
-        xxxSmall: ".09rem",
-        xxSmall: ".4rem",
-        xSmall: ".8rem",
-        small: "1.6rem",
-        medium: "3.3rem",
-        large: "4.8rem",
-        xLarge: "6.4rem",
-        xxLarge: "9.6rem",
+        xxSmall: "0.2rem",
     },
     animations: {
         transition: "all 0.3s linear",
@@ -53,7 +46,7 @@ export default {
     },
     sizes: {
         xxSmall: ".4rem",
-        xSmall: ".8rem",
+        xSmall: "0.875rem",
         small: "2rem",
         medium: "3.3rem",
         large: "4.8rem",
@@ -72,7 +65,7 @@ export default {
     },
     heights: {
         normal: "normal",
-        height1: "1.5rem",
+        height1: "1.5",
         height2: "2.7rem",
         height3: "4rem",
         height4: "4.8rem",
