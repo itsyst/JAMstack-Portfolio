@@ -914,6 +914,7 @@ About Page
   height: 50%;
 }
 .about-text {
+  padding: 1rem;
   background: #fff;
 }
 .about-text .section-title {
@@ -926,6 +927,14 @@ About Page
 }
 .about-text p {
   line-height: 2;
+}
+.about-text h4{
+  padding: .75rem 0 ;
+  color: #2caeba;
+}
+.about-text li  {
+  list-style-type: disc;
+  margin-left:2rem;
 }
 .stack-container {
   width: 100%;
@@ -950,6 +959,7 @@ About Page
   margin-right: 0.25rem;
   font-size: 1rem;
 }
+
 @media screen and (min-width: 992px) {
   .about-center {
     display: grid;
@@ -968,7 +978,6 @@ About Page
     z-index: 20;
   }
   .about-text {
-    padding: 1rem;
     grid-column: 2 / 12;
     grid-row: 1/-1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);;
