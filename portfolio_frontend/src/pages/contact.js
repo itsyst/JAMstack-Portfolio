@@ -9,12 +9,8 @@ const contact = () => {
             <section className="contact-page">
                 <article className="contact-form">
                     <h3>kontakta mig</h3>
-                    <form
-                        name="contact"
-                        method="post"
-                        data-netlify="true"
-                        data-netlify-honeypot="bot-field"
-                        netlify>
+                    <form action="/thanks" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                        <input type="hidden" name="form" value="contact" />
                         <div className="form-group">
                             <input
                                 type="text"
