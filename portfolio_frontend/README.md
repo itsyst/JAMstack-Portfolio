@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/itsyst/khaled_elhamzi_portfolio">
-    <img alt="logo" src="https://raw.githubusercontent.com/itsyst/khaled_elhamzi_tentan1/master/src/images/blog-icon.png?token=AEJZHAJ42FOQBK2YA4QJPTK7O3HE4" width="80"  />
+    <img alt="logo" src="https://res.cloudinary.com/dzltxlm9l/image/upload/v1601971370/logo_fd60ee4493.png" width="90"  />
   </a>
 </p>
 <h1 align="center">
