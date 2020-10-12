@@ -38,8 +38,8 @@ module.exports = ({ env }) => (
 
 11.
 
-```
-<form action="https://formspree.io/f/xxxx"method="POST">
+```html:
+<form action="https://formspree.io/f/xxxx" method="POST">
     <label>
     Your email:`
         <input type="text" name="_replyto">
@@ -51,6 +51,10 @@ module.exports = ({ env }) => (
          <!-- your other form fields go here -->
         <button type="submit">Send</button>
     </form>
+```
+>Or you can just use the netlify form, and do not forget to set the netlify attribute like below
+```html:
+<form action="/thanks" name="contact" netlify>
 ```
 
 12. In the frontend run `gatsby develop` and keep running the backend_portfolio in the background to fetch data from strapi.
