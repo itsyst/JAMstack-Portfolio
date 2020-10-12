@@ -696,6 +696,10 @@ Projects
 .about-stack span {
   margin-top: 0.5rem;
 }
+
+.about-stack{
+ margin-top: 1.5rem;
+}
 .project-icon {
   color: var(--clr-primary-5);
   font-size: 1.25rem;
@@ -909,6 +913,9 @@ About Page
   margin-bottom: 2rem;
   height: 50%;
 }
+.about-text {
+  background: #fff;
+}
 .about-text .section-title {
   margin-bottom: 2rem;
   text-align: left;
@@ -927,6 +934,10 @@ About Page
   grid-template-rows: (repeat 6fr); */
   row-gap: 0.5rem;
 }
+.btn-cv{
+  margin:1rem .5rem 1rem 0;
+}
+
 .stack-container span {
   text-transform: uppercase;
   display: flex;
@@ -957,7 +968,6 @@ About Page
     z-index: 20;
   }
   .about-text {
-    background: #fff;
     padding: 1rem;
     grid-column: 2 / 12;
     grid-row: 1/-1;

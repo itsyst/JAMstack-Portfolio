@@ -9,7 +9,7 @@ export default [
         id: 1,
         icon: <FaCode className="service-icon" />,
         title: "web development",
-        text: `Jag kan skapa en dynamisk webbplats som går smidigt med moderna programmeringstekniker. (Laravel, Gatsby, VueJs, React, ASP.NET Core)`,
+        text: `Jag kan skappa en dynamisk webbplats som går smidigt med moderna programmeringstekniker. (Laravel, Gatsby, VueJs, React, ASP.NET Core)`,
     },
     {
         id: 2,
