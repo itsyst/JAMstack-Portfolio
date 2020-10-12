@@ -57,13 +57,15 @@ const IndexPage = ({ data }) => {
     allStrapiBlogs: { nodes: blogs },
   } = data
   return (
-    <Layout>
+    <Layout clasName="home-page">
       <SEO title="Hem" description="Startsidan" />
-      <Hero />
-      <Services />
-      <Jobs />
-      <Projects projects={projects} title="projekt i fokus" showLink />
-      <Blogs blogs={blogs} title="Senaste artiklar" showLink />
+      <section className="home-page">
+        <Hero />
+        <Services />
+        <Jobs />
+        <Projects projects={projects} title="projekt i fokus" showLink />
+        <Blogs blogs={blogs} title="Senaste artiklar" showLink />
+      </section>
     </Layout>
   )
 }
