@@ -1,3 +1,5 @@
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/98f353bd-f2a5-4c4a-b68e-d378dd652281/deploy-status)](https://app.netlify.com/sites/frosty-ramanujan-57495b/deploys)
 ## 🚀 Setup Notes
 
 1. `npm install` ot `yarn` in both frontend and backend directories
@@ -52,3 +54,15 @@ module.exports = ({ env }) => (
 ```
 
 12. In the frontend run `gatsby develop` and keep running the backend_portfolio in the background to fetch data from strapi.
+13. To deploy you site to netlify you have to set the API_URL in gatsby-config file to your heroku url 
+```
+        {
+            resolve: `gatsby-source-strapi`,
+            options: {
+                apiURL: process.env.API_URL,
+                contentTypes: [`jobs`, `projects`, `blogs`],
+                singleTypes: [`about`],
+                queryLimit: 1000,
+            },
+        },
+```
