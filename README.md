@@ -85,3 +85,17 @@ require('dotenv').config({
     path: `.env.${process.env.NODE_ENV}`,
 })
 ```
+15. To make the reCAPTCHA, you’ll need to do the following:
+
+1. [Sign up for a reCAPTCHA API key pair](http://www.google.com/recaptcha/admin) for your site.
+2. [Log in to your Netlify account](https://app.netlify.com), and add the following
+   environment variables to your site’s Settings > Build & deploy > Build environment variables:
+
+- `SITE_RECAPTCHA_KEY` with your reCAPTCHA site key.
+- `SITE_RECAPTCHA_SECRET` with your reCAPTCHA secret key.
+
+**Important**: the environment variables need to be called `SITE_RECAPTCHA_KEY` and `SITE_RECAPTCHA_SECRET` for the Netlify backend to find them. If you add a `GATSBY_` prefix to the variable names, the Netlify backend won't recognize them, the reCAPTCHA verification will fail, and your form submissions won't be stored.
+
+If you still need the key on the frontend, like shown in this demo, you can simply duplicate the key:
+
+![image](https://res.cloudinary.com/dzltxlm9l/image/upload/v1602520090/recapcha_shndu5.png)
