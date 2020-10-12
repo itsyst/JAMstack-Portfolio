@@ -9,7 +9,7 @@ const contact = () => {
             <section className="contact-page">
                 <article className="contact-form">
                     <h3>kontakta mig</h3>
-                    <form name="contact" data-netlify="true" method="POST">
+                    <form netlify action="" method="POST">
                         <div className="form-group">
                             <input
                                 type="text"
