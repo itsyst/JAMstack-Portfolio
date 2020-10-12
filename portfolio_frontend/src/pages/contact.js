@@ -35,7 +35,7 @@ const contact = () => {
                             ></textarea>
                         </div>
                         <div className="form-recaptcha">
-                            <div data-netlify-recaptcha="true">ff</div>
+                            <div data-netlify-recaptcha="true"></div>
                         </div>
                         <button type="submit" className="submit-btn btn">
                             Kontakta mig
