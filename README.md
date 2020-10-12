@@ -1,3 +1,12 @@
+<p align="center">
+  <a href="https://github.com/itsyst/khaled_elhamzi_portfolio">
+    <img alt="logo" src="https://raw.githubusercontent.com/itsyst/khaled_elhamzi_portfolio/67d6fde79bc8954f1d7190ca39d316db9d37939a/portfolio_frontend/src/assets/logo.svg?token=AEJZHAMUOF4VM2JLAIWEQ7S7QRJMS" width="90"  />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby's Portfolio
+</h1>
+
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/98f353bd-f2a5-4c4a-b68e-d378dd652281/deploy-status)](https://app.netlify.com/sites/frosty-ramanujan-57495b/deploys)
 ## 🚀 Setup Notes
