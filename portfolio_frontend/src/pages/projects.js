@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
 import SEO from "../components/SEO"
+import styled from "styled-components"
 
 export const query = graphql`
   {
@@ -37,11 +38,16 @@ const ProjectsPage = ({
   return (
     <Layout>
       <SEO title="Projekt" description="Projektsidan" />
-      <section className="project-page">
+      <StyledProjectsPage>
         <Projects projects={projects} title="Alla projekt" />
-      </section>
+      </StyledProjectsPage>
     </Layout>
   )
 }
+
+const StyledProjectsPage = styled.section`
+  background: ${props => props.theme.colors.grey10};
+  min-height: calc(100vh - 5rem - 9rem);
+`
 
 export default ProjectsPage
