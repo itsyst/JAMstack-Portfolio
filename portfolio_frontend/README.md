@@ -38,7 +38,7 @@
 ## 🧐 What's inside
 
 A quick look at the top-level files and directories in this project.
-    .
+
     ├── node_modules
     ├── src
     ├── .gitignore
