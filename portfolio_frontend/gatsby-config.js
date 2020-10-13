@@ -8,7 +8,7 @@ module.exports = {
         author: "Khaled El Hamzi",
         twitterUsername: "@KhaledElHamzi",
         image: "/twitter-img.png",
-        siteUrl: "https://elhamzi.me",
+        siteUrl: "https://www.elhamzi.me",
     },
     plugins: [
         `gatsby-transformer-sharp`,
