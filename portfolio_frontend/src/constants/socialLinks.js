@@ -36,24 +36,41 @@ const data = [
   },
 ]
 
-export default ({ styleClass }) => {
+export default () => {
   return (
-    <ul className={`social-links ${styleClass ? styleClass : ""}`}>
+    <StyledSocialLink>
       {data.map(link => (
         <li key={link.id}>
-          <StyledSocialLink href={link.url} target="_blank" rel="noopener noreferrer">{link.icon}</StyledSocialLink>
+          <a href={link.url} target="_blank" rel="noopener noreferrer">{link.icon}</a>
         </li>
 
       ))}
-    </ul>
+    </StyledSocialLink>
   )
 }
 
-const StyledSocialLink = styled.a`
-  font-size: 1.75rem;
-  transition: ${props => props.theme.colors.primary5};
-
-  :hover {
-  color: ${props => props.theme.animations.transition};
+const StyledSocialLink = styled.ul`
+display: flex;
+align-items:center;
+margin-top:2rem;
+  li{
+    display: block;
+    margin-right :.3rem;
+  }
+  a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: ${props => props.theme.colors.grey1};
+    transition: ${props => props.theme.animations.transition};
+    :hover {
+      color: ${props => props.theme.colors.primary5};
+    }
+  }
+  flex-flow: row wrap;
+  @media screen and (max-width: 245px) {
+    width: 50vw;
+    a{
+        font-size: 1.5rem;
+    }
   }
 `
