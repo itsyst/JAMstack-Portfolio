@@ -519,7 +519,6 @@
           "id",
           "description",
           "image",
-          "github",
           "url",
           "stack"
         ],
@@ -636,7 +635,6 @@
       "NewProject": {
         "required": [
           "description",
-          "github",
           "url",
           "stack"
         ],

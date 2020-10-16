@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/13/2020 8:44:09 AM"
+    "x-generation-date": "10/16/2020 11:16:22 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4399,7 +4399,6 @@
           "id",
           "description",
           "image",
-          "github",
           "url",
           "stack"
         ],
@@ -4516,7 +4515,6 @@
       "NewProject": {
         "required": [
           "description",
-          "github",
           "url",
           "stack"
         ],
