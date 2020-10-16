@@ -99,3 +99,8 @@ require('dotenv').config({
 If you still need the key on the frontend, like shown in this demo, you can simply duplicate the key:
 
 ![image](https://res.cloudinary.com/dzltxlm9l/image/upload/v1602520090/recapcha_shndu5.png)
+
+
+---
+
+
