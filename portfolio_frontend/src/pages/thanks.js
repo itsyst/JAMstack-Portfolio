@@ -8,7 +8,7 @@ const Error = () => {
         <Layout>
             <StyledMain>
                 <StyledContainer>
-                    <h2>Tack, jag har nu mottagit ditt meddelande och kommer snart att ta kontakt med dig.</h2>
+                    <h4>Tack, jag har nu mottagit ditt meddelande och kommer snart att ta kontakt med dig.</h4>
                     <StyledButton to="/" >
                         Tillbaka Hem
                     </StyledButton>
@@ -25,15 +25,16 @@ const StyledMain = styled.main`
     background: ${props => props.theme.colors.grey10};
     min-height: calc(100vh - 5rem - 9rem);
 `
-
 const StyledContainer = styled.div`
     text-align: center;
-    h2{
+    max-width: 60vw;
+    h4{
         margin:5rem;
-        padding: 2rem;
+        padding: 5rem;
         background-color: ${props => props.theme.colors.white};
         border-radius:${props => props.theme.radius.small};
         box-shadow:${props => props.theme.shadows.darkShadow};
+        line-height: 1.5;
     }       
 `
 const StyledButton = styled(Link)`
