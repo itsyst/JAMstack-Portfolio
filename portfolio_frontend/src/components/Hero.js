@@ -9,7 +9,7 @@ import styled from "styled-components"
 const Hero = () => {
     const data = useStaticQuery(graphql`
     query {
-      file(name: { eq: "hero1-img" }, extension: { eq: "png" }) {
+      file(name: { eq: "hero-img" }, extension: { eq: "png" }) {
         childImageSharp {
           fluid{
             ...GatsbyImageSharpFluid
