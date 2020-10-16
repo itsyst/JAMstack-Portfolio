@@ -5,19 +5,19 @@ import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
 import styled from "styled-components"
 
-const query = graphql`
-{
-    file(relativePath: { eq: "hero-img.png" }) {
-        childImageSharp {
-            fluid {
-                ...GatsbyImageSharpFluid
-            }
-        }
-    }
-}
-`
+
 const Hero = () => {
-    const { file: { childImageSharp: { fluid }, }, } = useStaticQuery(query)
+    const data = useStaticQuery(graphql`
+    query {
+      file(name: { eq: "hero-img" }, extension: { eq: "png" }) {
+        childImageSharp {
+          fluid{
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
 
     return (
         <StyledHero>
@@ -37,7 +37,9 @@ const Hero = () => {
                     <StyledHeroButton to="/contact" >kontakta mig</StyledHeroButton>
                     <SocialLinks />
                 </StyledHeroInfo>
-                <StyledHeroImg fluid={fluid} />
+                <StyledHeroImg>
+                    <Img fluid={data.file.childImageSharp.fluid} alt="hero" />
+                </StyledHeroImg>
             </StyledHeroCenter>
             <StyledHeroShape />
         </StyledHero>
@@ -102,7 +104,7 @@ const StyledHeroUnderline = styled.section`
     margin-right: auto;
     text-align:left;
 `
-const StyledHeroImg = styled(Img)`
+const StyledHeroImg = styled.div`
     width: 40%;
     @media screen and (max-width: 767px) {
         display:none;
