@@ -9,7 +9,7 @@ import styled from "styled-components"
 const Hero = () => {
     const data = useStaticQuery(graphql`
     query {
-      file(name: { eq: "hero-img" }, extension: { eq: "png" }) {
+      file(name: { eq: "hero1-img" }, extension: { eq: "png" }) {
         childImageSharp {
           fluid{
             ...GatsbyImageSharpFluid
@@ -109,23 +109,6 @@ const StyledHeroImg = styled.div`
     @media screen and (max-width: 767px) {
         display:none;
     }
-
-    opacity: 0;
-    animation: slideLeft 0.5s ease-in-out 0.3s forwards;
-    @keyframes slideLeft {
-    0% {
-        transform: translateX(200px);
-        opacity: 0;
-    }
-    50% {
-            transform: translateX(100px);
-            opacity: 0.5;
-        }
-    100% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }  
 `
 const StyledHeroButton = styled(Link)`
     text-transform: uppercase;
