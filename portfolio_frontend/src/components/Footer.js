@@ -15,21 +15,19 @@ const Footer = () => {
 }
 
 const StyledFooter = styled.footer`
-    height: 9rem;
+    height: 12rem;
     background: ${props => props.theme.colors.black};
     text-align: center;
     display: grid;
     place-items: center;
-    padding:1rem;
-
     ul{
-        margin :1rem auto 0;
-        width: 15rem;
+        margin :1rem auto;
         display: flex;
         li {
             list-style-type: none;
-            margin: 0 auto 1rem auto;    
+            margin: .1rem auto;    
             a{
+            margin:0.3rem;
             color: ${props => props.theme.colors.white};
                 :hover{
                     color: ${props => props.theme.colors.primary5};
@@ -39,7 +37,8 @@ const StyledFooter = styled.footer`
     }
 
     h4{
-        margin-top: 0.5rem;
+        overflow-wrap: break-word;
+        margin-top: -2.5rem;
         color: ${props => props.theme.colors.white};
         font-weight: normal;
         text-transform: uppercase;
