@@ -74,7 +74,7 @@ export default {
     },
     widths: {
         medium: "8rem",
-        maxWidth: "117rem",
+        maxWidth: "1170px",
         fixedWidth: "70rem",
     }
 }

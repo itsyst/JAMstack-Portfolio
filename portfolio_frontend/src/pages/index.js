@@ -7,6 +7,7 @@ import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 import SEO from "../components/SEO"
+import styled from "styled-components"
 
 export const query = graphql`
   {
@@ -59,14 +60,21 @@ const IndexPage = ({ data }) => {
   return (
     <Layout clasName="home-page">
       <SEO title="Hem" description="Startsidan" />
-      <section className="home-page">
+      <StyledHomePage>
         <Hero />
         <Services />
         <Jobs />
         <Projects projects={projects} title="projekt i fokus" showLink />
         <Blogs blogs={blogs} title="Senaste artiklar" showLink />
-      </section>
+      </StyledHomePage>
     </Layout>
   )
 }
+
+const StyledHomePage = styled.section`
+  background: ${props => props.theme.colors.grey10};
+  min-height: calc(100vh - 5rem - 9rem);
+`
+
+
 export default IndexPage

@@ -53,8 +53,7 @@ Variables
 Global Styles
 ===============
 */
-
-*,
+ *,
 ::after,
 ::before {
   margin: 0;
@@ -124,10 +123,10 @@ p {
   h4 {
     line-height: 1;
   }
-}
+} */
 /*  global classes */
 
-.btn {
+ .btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
   color: var(--clr-primary-9);
@@ -153,22 +152,9 @@ p {
   text-align: center;
   margin: 0 auto;
   margin-top: 3rem;
-}
+} */
 /* section */
-.section {
-  padding: 5rem 0;
-}
 
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
 /* added during recording */
 .underline {
   width: 5rem;
@@ -201,7 +187,7 @@ p {
 }
 .social-link:hover {
   color: var(--clr-primary-5);
-}
+}  
 /*
 =============== 
 Navbar
@@ -864,6 +850,7 @@ Pages
 .home-page
 .blog-template,
 .projects-page,
+.project-page,
 .blog-page,
 .error-page,
 .about-page,
