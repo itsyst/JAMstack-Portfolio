@@ -11,7 +11,7 @@ const Hero = () => {
     query {
       file(name: { eq: "hero-img" }, extension: { eq: "png" }) {
         childImageSharp {
-          fluid{
+          fluid(maxWidth: 40) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -105,7 +105,6 @@ const StyledHeroUnderline = styled.section`
     text-align:left;
 `
 const StyledHeroImg = styled.div`
-    width: 40%;
     @media screen and (max-width: 767px) {
         display:none;
     }
