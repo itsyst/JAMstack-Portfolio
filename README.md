@@ -8,7 +8,9 @@
 </h1>
 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/98f353bd-f2a5-4c4a-b68e-d378dd652281/deploy-status)](https://app.netlify.com/sites/frosty-ramanujan-57495b/deploys)
+ 
+## Give a Star! :star:
+If you Like the project, please give a star ;)
 ## 🚀 Setup Notes
 
 1. `npm install` ot `yarn` in both frontend and backend directories
